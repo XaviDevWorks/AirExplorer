@@ -11,6 +11,8 @@
 		EF2A33BD2F153E7400999B07 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A33BC2F153E7400999B07 /* ContentView.swift */; };
 		EF2A33BF2F153E7600999B07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF2A33BE2F153E7600999B07 /* Assets.xcassets */; };
 		EF2A33C22F153E7600999B07 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF2A33C12F153E7600999B07 /* Preview Assets.xcassets */; };
+		EF2A33CE2F1540D500999B07 /* Aircraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A33CD2F1540D500999B07 /* Aircraft.swift */; };
+		EF2A33D32F15411900999B07 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A33D22F15411900999B07 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		EF2A33BE2F153E7600999B07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF2A33C12F153E7600999B07 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EF2A33C32F153E7600999B07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF2A33CD2F1540D500999B07 /* Aircraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aircraft.swift; sourceTree = "<group>"; };
+		EF2A33D22F15411900999B07 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,9 @@
 		EF2A33B92F153E7400999B07 /* AirExplorer */ = {
 			isa = PBXGroup;
 			children = (
+				EF2A33CC2F1540B900999B07 /* ViewModel */,
+				EF2A33CB2F1540B200999B07 /* View */,
+				EF2A33CA2F1540A100999B07 /* Model */,
 				EF2A33BA2F153E7400999B07 /* AirExplorerApp.swift */,
 				EF2A33BC2F153E7400999B07 /* ContentView.swift */,
 				EF2A33BE2F153E7600999B07 /* Assets.xcassets */,
@@ -67,6 +74,29 @@
 				EF2A33C12F153E7600999B07 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EF2A33CA2F1540A100999B07 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF2A33CD2F1540D500999B07 /* Aircraft.swift */,
+				EF2A33D22F15411900999B07 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF2A33CB2F1540B200999B07 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EF2A33CC2F1540B900999B07 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +168,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF2A33D32F15411900999B07 /* User.swift in Sources */,
 				EF2A33BD2F153E7400999B07 /* ContentView.swift in Sources */,
+				EF2A33CE2F1540D500999B07 /* Aircraft.swift in Sources */,
 				EF2A33BB2F153E7400999B07 /* AirExplorerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
