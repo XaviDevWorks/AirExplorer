@@ -60,7 +60,6 @@
 				EF2A33CB2F1540B200999B07 /* View */,
 				EF2A33CA2F1540A100999B07 /* Model */,
 				EF2A33BA2F153E7400999B07 /* AirExplorerApp.swift */,
-				EF2A33BC2F153E7400999B07 /* ContentView.swift */,
 				EF2A33BE2F153E7600999B07 /* Assets.xcassets */,
 				EF2A33C32F153E7600999B07 /* Info.plist */,
 				EF2A33C02F153E7600999B07 /* Preview Content */,
@@ -88,6 +87,7 @@
 		EF2A33CB2F1540B200999B07 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EF2A33BC2F153E7400999B07 /* ContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
