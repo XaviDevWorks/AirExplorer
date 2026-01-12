@@ -8,22 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		EF2A33BB2F153E7400999B07 /* AirExplorerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A33BA2F153E7400999B07 /* AirExplorerApp.swift */; };
-		EF2A33BD2F153E7400999B07 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A33BC2F153E7400999B07 /* ContentView.swift */; };
+		EF2A33BD2F153E7400999B07 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A33BC2F153E7400999B07 /* RegisterView.swift */; };
 		EF2A33BF2F153E7600999B07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF2A33BE2F153E7600999B07 /* Assets.xcassets */; };
 		EF2A33C22F153E7600999B07 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF2A33C12F153E7600999B07 /* Preview Assets.xcassets */; };
 		EF2A33CE2F1540D500999B07 /* Aircraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A33CD2F1540D500999B07 /* Aircraft.swift */; };
 		EF2A33D32F15411900999B07 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A33D22F15411900999B07 /* User.swift */; };
+		EF2A33DC2F154A6500999B07 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A33DB2F154A6500999B07 /* LoginView.swift */; };
+		EF2A33DF2F154A8800999B07 /* AircraftListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A33DE2F154A8800999B07 /* AircraftListView.swift */; };
+		EF2A33E22F154A9F00999B07 /* AircraftDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A33E12F154A9F00999B07 /* AircraftDetailView.swift */; };
+		EF2A33E52F154AC500999B07 /* AircraftViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A33E42F154AC500999B07 /* AircraftViewModel.swift */; };
+		EF2A33E82F154AD200999B07 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A33E72F154AD200999B07 /* UserViewModel.swift */; };
+		EF2A33EB2F154F0100999B07 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A33EA2F154F0100999B07 /* FilterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EF2A33B72F153E7400999B07 /* AirExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF2A33BA2F153E7400999B07 /* AirExplorerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirExplorerApp.swift; sourceTree = "<group>"; };
-		EF2A33BC2F153E7400999B07 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EF2A33BC2F153E7400999B07 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		EF2A33BE2F153E7600999B07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF2A33C12F153E7600999B07 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EF2A33C32F153E7600999B07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF2A33CD2F1540D500999B07 /* Aircraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aircraft.swift; sourceTree = "<group>"; };
 		EF2A33D22F15411900999B07 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EF2A33DB2F154A6500999B07 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		EF2A33DE2F154A8800999B07 /* AircraftListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AircraftListView.swift; sourceTree = "<group>"; };
+		EF2A33E12F154A9F00999B07 /* AircraftDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AircraftDetailView.swift; sourceTree = "<group>"; };
+		EF2A33E42F154AC500999B07 /* AircraftViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AircraftViewModel.swift; sourceTree = "<group>"; };
+		EF2A33E72F154AD200999B07 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		EF2A33EA2F154F0100999B07 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +99,11 @@
 		EF2A33CB2F1540B200999B07 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				EF2A33BC2F153E7400999B07 /* ContentView.swift */,
+				EF2A33BC2F153E7400999B07 /* RegisterView.swift */,
+				EF2A33DB2F154A6500999B07 /* LoginView.swift */,
+				EF2A33DE2F154A8800999B07 /* AircraftListView.swift */,
+				EF2A33E12F154A9F00999B07 /* AircraftDetailView.swift */,
+				EF2A33EA2F154F0100999B07 /* FilterView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -95,6 +111,8 @@
 		EF2A33CC2F1540B900999B07 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				EF2A33E42F154AC500999B07 /* AircraftViewModel.swift */,
+				EF2A33E72F154AD200999B07 /* UserViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -169,8 +187,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF2A33D32F15411900999B07 /* User.swift in Sources */,
-				EF2A33BD2F153E7400999B07 /* ContentView.swift in Sources */,
+				EF2A33BD2F153E7400999B07 /* RegisterView.swift in Sources */,
+				EF2A33E52F154AC500999B07 /* AircraftViewModel.swift in Sources */,
+				EF2A33DF2F154A8800999B07 /* AircraftListView.swift in Sources */,
+				EF2A33E22F154A9F00999B07 /* AircraftDetailView.swift in Sources */,
 				EF2A33CE2F1540D500999B07 /* Aircraft.swift in Sources */,
+				EF2A33DC2F154A6500999B07 /* LoginView.swift in Sources */,
+				EF2A33E82F154AD200999B07 /* UserViewModel.swift in Sources */,
+				EF2A33EB2F154F0100999B07 /* FilterView.swift in Sources */,
 				EF2A33BB2F153E7400999B07 /* AirExplorerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

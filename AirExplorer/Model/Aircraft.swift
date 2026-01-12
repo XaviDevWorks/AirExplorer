@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Aircraft{
+struct Aircraft: Codable {
     
     let id = UUID()
     let manufacturer: String
