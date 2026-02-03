@@ -7,12 +7,8 @@
 
 import Foundation
 
-
-struct User{
-    
-    let id = UUID() // ID único generadi automáticamente
-    let name: String // Nombre de usuario
-    let email: String  // Correo electrónico
-    let password: String // Contraseña
-    
+struct User {
+    let email: String
+    let password: String
+    let name: String
 }

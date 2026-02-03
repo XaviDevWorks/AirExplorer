@@ -1,15 +1,7 @@
-//
-//  Aircraft.swift
-//  AirExplorer
-//
-//  Created by alumne on 19/01/2026.
-//
-
-
 import Foundation
 
-struct Aircraft: Decodable, Identifiable {
-    let id: String
+struct Aircraft: Identifiable, Codable {
+    let id = UUID()
     let manufacturer: String
     let model: String
     let engineType: String
@@ -26,11 +18,9 @@ struct Aircraft: Decodable, Identifiable {
     let wingSpanFt: String?
     let rangeNauticalMiles: String?
     let imageURL: String?
-
+    
     enum CodingKeys: String, CodingKey {
-        case id
-        case manufacturer
-        case model
+        case manufacturer, model
         case engineType = "engine_type"
         case engineThrustLbFt = "engine_thrust_lb_ft"
         case maxSpeedKnots = "max_speed_knots"
@@ -47,5 +37,3 @@ struct Aircraft: Decodable, Identifiable {
         case imageURL = "image_url"
     }
 }
-
-

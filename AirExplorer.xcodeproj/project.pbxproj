@@ -19,6 +19,8 @@
 		EF2A33E52F154AC500999B07 /* AircraftViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A33E42F154AC500999B07 /* AircraftViewModel.swift */; };
 		EF2A33E82F154AD200999B07 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A33E72F154AD200999B07 /* UserViewModel.swift */; };
 		EF2A33EB2F154F0100999B07 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A33EA2F154F0100999B07 /* FilterView.swift */; };
+		EFE98CA72F1E795D00271776 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE98CA62F1E795D00271776 /* APIError.swift */; };
+		EFE98CAA2F1E798F00271776 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE98CA92F1E798F00271776 /* APIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		EF2A33E42F154AC500999B07 /* AircraftViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AircraftViewModel.swift; sourceTree = "<group>"; };
 		EF2A33E72F154AD200999B07 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		EF2A33EA2F154F0100999B07 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		EFE98CA62F1E795D00271776 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		EFE98CA92F1E798F00271776 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,8 @@
 			children = (
 				EF2A33CD2F1540D500999B07 /* Aircraft.swift */,
 				EF2A33D22F15411900999B07 /* User.swift */,
+				EFE98CA62F1E795D00271776 /* APIError.swift */,
+				EFE98CA92F1E798F00271776 /* APIService.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -196,6 +202,8 @@
 				EF2A33E82F154AD200999B07 /* UserViewModel.swift in Sources */,
 				EF2A33EB2F154F0100999B07 /* FilterView.swift in Sources */,
 				EF2A33BB2F153E7400999B07 /* AirExplorerApp.swift in Sources */,
+				EFE98CAA2F1E798F00271776 /* APIService.swift in Sources */,
+				EFE98CA72F1E795D00271776 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
