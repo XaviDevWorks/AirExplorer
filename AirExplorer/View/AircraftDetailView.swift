@@ -7,7 +7,7 @@
 
 
 import SwiftUI
-import KingfisherSwiftUI
+import Kingfisher
 
 struct AircraftDetailView: View {
     let aircraft: Aircraft

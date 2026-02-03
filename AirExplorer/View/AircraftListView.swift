@@ -7,7 +7,7 @@
 
 
 import SwiftUI
-import KingfisherSwiftUI
+import Kingfisher
 
 struct AircraftListView: View {
     @EnvironmentObject var vm: AircraftViewModel
@@ -30,32 +30,50 @@ struct AircraftListView: View {
                     }
                 }
             } else {
-                List(filteredAircrafts) { aircraft in
-                    NavigationLink(destination: AircraftDetailView(aircraft: aircraft)) {
-                        HStack {
-                            if let urlString = aircraft.imageURL,
-                               let url = URL(string: urlString) {
-                                KFImage(url)
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 80, height: 60)
-                                    .cornerRadius(8)
-                            } else {
-                                Image(systemName: "airplane")
-                                    .frame(width: 80, height: 60)
+                VStack(spacing: 8) {
+                    // Simple search bar compatible with older Xcode/iOS
+                    HStack {
+                        Image(systemName: "magnifyingglass")
+                            .foregroundColor(.secondary)
+                        TextField("Buscar modelo o fabricante", text: $searchText)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .disableAutocorrection(true)
+                            .autocapitalization(.none)
+                        if !searchText.isEmpty {
+                            Button(action: { searchText = "" }) {
+                                Image(systemName: "xmark.circle.fill")
+                                    .foregroundColor(.secondary)
                             }
-                            
-                            VStack(alignment: .leading) {
-                                Text(aircraft.model)
-                                    .font(.headline)
-                                Text(aircraft.manufacturer)
-                                    .font(.subheadline)
-                                    .foregroundColor(.gray)
+                        }
+                    }
+                    .padding([.horizontal])
+
+                    List(filteredAircrafts) { aircraft in
+                        NavigationLink(destination: AircraftDetailView(aircraft: aircraft)) {
+                            HStack {
+                                if let urlString = aircraft.imageURL,
+                                   let url = URL(string: urlString) {
+                                    KFImage(url)
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 80, height: 60)
+                                        .cornerRadius(8)
+                                } else {
+                                    Image(systemName: "airplane")
+                                        .frame(width: 80, height: 60)
+                                }
+
+                                VStack(alignment: .leading) {
+                                    Text(aircraft.model)
+                                        .font(.headline)
+                                    Text(aircraft.manufacturer)
+                                        .font(.subheadline)
+                                        .foregroundColor(.gray)
+                                }
                             }
                         }
                     }
                 }
-                .searchable(text: $searchText, prompt: "Buscar modelo o fabricante")
                 .navigationTitle("Aviones")
             }
         }
