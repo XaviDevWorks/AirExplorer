@@ -41,13 +41,16 @@ struct APIService {
                 return
             }
             
-            if let dataResponse = data {
-                do {
-                    let decoded = try JSONDecoder().decode(JSONBinResponse<[Aircraft]>.self, from: dataResponse)
-                    completion(.success(decoded.record))
-                } catch {
-                    completion(.failure(.decodingFailed(error)))
-                }
+            guard let dataResponse = data else {
+                completion(.failure(.invalidResponse))
+                return
+            }
+            
+            do {
+                let decoded = try JSONDecoder().decode(JSONBinResponse<[Aircraft]>.self, from: dataResponse)
+                completion(.success(decoded.record))
+            } catch {
+                completion(.failure(.decodingFailed(error)))
             }
         }
         task.resume()
